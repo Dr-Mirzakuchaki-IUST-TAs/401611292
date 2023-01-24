@@ -1,0 +1,33 @@
+V3 19
+FL C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd 2023/01/25.00:13:59 P.20131013
+EN work/FE_AD4020 1674593150 \
+      FL C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/FE_AD4020/Behavioral 1674593151 \
+      FL C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd \
+      EN work/FE_AD4020 1674593150 CP spi_commands
+FL C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_abstract.vhd 2023/01/24.22:57:26 P.20131013
+EN work/spi_abstract 1674593146 \
+      FL C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_abstract.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/spi_abstract/Behavioral 1674593147 \
+      FL C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_abstract.vhd \
+      EN work/spi_abstract 1674593146
+FL C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd 2023/01/22.14:52:24 P.20131013
+EN work/spi_commands 1674593148 \
+      FL C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/spi_commands/Behavioral 1674593149 \
+      FL C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd \
+      EN work/spi_commands 1674593148 CP spi_abstract
+FL F:/Project/1/Final_Project_401611292/AD4020.vhd 2023/01/22.18:30:26 P.20131013
+FL F:/Project/1/Final_Project_401611292/spi_abstract.vhd 2023/01/22.14:58:05 P.20131013
+FL F:/Project/1/Final_Project_401611292/spi_commands.vhd 2023/01/22.14:52:23 P.20131013
+FL F:/Project/Final_Project_401611292/AD4020.vhd 2023/01/22.10:51:23 P.20131013
+EN work/FE_AD4020_v1 1674372138 FL F:/Project/Final_Project_401611292/AD4020.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/FE_AD4020_v1/rtl 1674372139 \
+      FL F:/Project/Final_Project_401611292/AD4020.vhd EN work/FE_AD4020_v1 1674372138 \
+      CP spi_commands
+FL F:/Project/Final_Project_401611292/spi_abstract.vhd 2023/01/22.10:42:22 P.20131013
+FL F:/Project/Final_Project_401611292/spi_commands.vhd 2023/01/22.10:44:03 P.20131013

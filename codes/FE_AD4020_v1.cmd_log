@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "F:/Project/Final_Project_401611292/FE_AD4020_v1.xst" -ofn "F:/Project/Final_Project_401611292/FE_AD4020_v1.syr" 
+xst -intstyle ise -ifn "F:/Project/Final_Project_401611292/FE_AD4020_v1.xst" -ofn "F:/Project/Final_Project_401611292/FE_AD4020_v1.syr" 
+xst -intstyle ise -ifn "F:/Project/Final_Project_401611292/FE_AD4020_v1.xst" -ofn "F:/Project/Final_Project_401611292/FE_AD4020_v1.syr" 

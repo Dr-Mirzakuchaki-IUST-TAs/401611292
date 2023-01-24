@@ -1,0 +1,4 @@
+vhdl work "spi_abstract.vhd"
+vhdl work "spi_commands.vhd"
+vhdl work "AD4020.vhd"
+vhdl work "AD4020_test.vhd"

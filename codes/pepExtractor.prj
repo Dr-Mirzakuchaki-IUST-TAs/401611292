@@ -1,0 +1,3 @@
+work	"AD4020.vhd"
+work	"spi_abstract.vhd"
+work	"spi_commands.vhd"
