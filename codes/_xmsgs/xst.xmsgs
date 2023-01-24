@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd</arg>&quot; line <arg fmt="%d" index="2">114</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">master_slave_data_ack_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">spi_commands</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd</arg>&quot; line <arg fmt="%d" index="2">114</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">command_done</arg>&apos; of component &apos;<arg fmt="%s" index="4">spi_commands</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd</arg>&quot; line <arg fmt="%d" index="2">114</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">slave_master_data_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">spi_commands</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd</arg>&quot; line <arg fmt="%d" index="2">114</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">slave_master_data_ack_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">spi_commands</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd</arg>&quot; line <arg fmt="%d" index="2">114</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">cs_n</arg>&apos; of component &apos;<arg fmt="%s" index="4">spi_commands</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">AD4020_spi_command</arg>&gt; in unit &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt; has a constant value of <arg fmt="%s" index="3">00</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">AD4020_spi_register_address</arg>&gt; in unit &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt; has a constant value of <arg fmt="%s" index="3">010100</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">AD4020_spi_write_data</arg>&gt; in unit &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000010</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd</arg>&quot; line <arg fmt="%d" index="2">191</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">mosi_data_spi</arg>&gt; has a width of <arg fmt="%d" index="4">16</arg> bits but assigned expression is <arg fmt="%d" index="5">8</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd</arg>&quot; line <arg fmt="%d" index="2">194</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">mosi_data_spi</arg>&gt; has a width of <arg fmt="%d" index="4">16</arg> bits but assigned expression is <arg fmt="%d" index="5">14</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd</arg>&quot; line <arg fmt="%d" index="2">200</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">mosi_data_spi</arg>&gt; has a width of <arg fmt="%d" index="4">16</arg> bits but assigned expression is <arg fmt="%d" index="5">10</arg>-bit wide.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">master_slave_data_ack_out</arg>&gt; in unit &lt;<arg fmt="%s" index="2">spi_commands</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_abstract.vhd</arg>&quot; line <arg fmt="%d" index="2">200</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;clk&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">data_select</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">11</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">sys_clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">data_ready</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">AD4020_spi_sclk_delayed</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">AD4020_data_r</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">spi_data_load</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">address_signal_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">spi_AD4020</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;address_signal_4&gt; &lt;data_signal_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">address_signal_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">spi_AD4020</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">12 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;address_signal_1&gt; &lt;address_signal_3&gt; &lt;address_signal_5&gt; &lt;command_signal_0&gt; &lt;command_signal_1&gt; &lt;data_signal_0&gt; &lt;data_signal_2&gt; &lt;data_signal_3&gt; &lt;data_signal_4&gt; &lt;data_signal_5&gt; &lt;data_signal_6&gt; &lt;data_signal_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">spi_AD4020</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">12 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mosi_data_spi_2&gt; &lt;mosi_data_spi_3&gt; &lt;mosi_data_spi_4&gt; &lt;mosi_data_spi_5&gt; &lt;mosi_data_spi_6&gt; &lt;mosi_data_spi_7&gt; &lt;mosi_data_spi_8&gt; &lt;mosi_data_spi_9&gt; &lt;mosi_data_spi_11&gt; &lt;mosi_data_spi_13&gt; &lt;mosi_data_spi_14&gt; &lt;mosi_data_spi_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">spi_AD4020</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mosi_data_spi_10&gt; &lt;mosi_data_spi_12&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">mosi_ctrl_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">FE_AD4020</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">address_signal_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_AD4020</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_AD4020</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">address_signal</arg>&lt;<arg fmt="%d" index="2">5</arg>:<arg fmt="%d" index="3">5</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">spi_commands</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">command_signal</arg>&lt;<arg fmt="%d" index="2">1</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">spi_commands</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">data_signal</arg>&lt;<arg fmt="%d" index="2">7</arg>:<arg fmt="%d" index="3">2</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">spi_commands</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">mosi_data_spi</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">13</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">spi_commands</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">address_signal_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">address_signal_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">address_signal_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">data_signal_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_commands</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">mosi_ctrl_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">FE_AD4020</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">address_signal_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">spi_commands</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;address_signal_4&gt; &lt;data_signal_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">mosi_data_spi_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">spi_commands</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mosi_data_spi_10&gt; &lt;mosi_data_spi_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">spi_abstract</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">12 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;send_shift_next_2&gt; &lt;send_shift_next_3&gt; &lt;send_shift_next_4&gt; &lt;send_shift_next_5&gt; &lt;send_shift_next_6&gt; &lt;send_shift_next_7&gt; &lt;send_shift_next_8&gt; &lt;send_shift_next_9&gt; &lt;send_shift_next_11&gt; &lt;send_shift_next_13&gt; &lt;send_shift_next_14&gt; &lt;send_shift_next_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">spi_abstract</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;send_shift_next_10&gt; &lt;send_shift_next_12&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">send_shift_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_abstract</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">send_shift_next_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">spi_abstract</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/read_shift_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_valid_o</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/spi_slave/miso_data_o_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/miso_byte_ack_count_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/miso_byte_ack_count_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/miso_byte_ack_count_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/miso_byte_ack_count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/miso_byte_ack_count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/miso_byte_ack_count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/miso_byte_ack_count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/miso_byte_ack_count_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/slave_master_data_ack_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">spi_AD4020/slave_master_data_ack_out_en</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">FE_AD4020</arg>&gt;.
+</msg>
+
+</messages>
+

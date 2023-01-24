@@ -1,0 +1,28 @@
+Command line:
+   AD4020_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49173
+
+Wed Jan 25 00:18:17 2023
+
+
+ Elaboration Time: 3.32282 sec
+
+ Current Memory Usage: 671.56 Meg
+
+ Total Signals          : 103
+ Total Nets             : 281
+ Total Signal Drivers   : 68
+ Total Blocks           : 7
+ Total Primitive Blocks : 3
+ Total Processes        : 29
+ Total Traceable Variables  : 37
+ Total Scalar Nets and Variables : 802
+
+ Total Simulation Time: 3.61922 sec
+
+ Current Memory Usage: 671.56 Meg
+
+Wed Jan 25 00:18:37 2023
+

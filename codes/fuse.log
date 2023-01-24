@@ -1,0 +1,25 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020_test_isim_beh.exe -prj C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020_test_beh.prj work.AD4020_test 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_abstract.vhd" into library work
+Parsing VHDL file "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd" into library work
+Parsing VHDL file "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd" into library work
+Parsing VHDL file "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020_test.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:960 - "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd" Line 191: Expression has incompatible type
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity spi_abstract [\spi_abstract(('0','0'),16)\]
+Compiling architecture behavioral of entity spi_commands [\spi_commands('1','1',2,6,8,16,(...]
+Compiling architecture behavioral of entity FE_AD4020 [\FE_AD4020(100000000)\]
+Compiling architecture behavior of entity ad4020_test
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 10 VHDL Units
+Built simulation executable C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020_test_isim_beh.exe
+Fuse Memory Usage: 36912 KB
+Fuse CPU Usage: 17299 ms

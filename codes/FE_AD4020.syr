@@ -1,0 +1,791 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.92 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.17 secs
+ 
+--> Reading design: FE_AD4020.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FE_AD4020.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FE_AD4020"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : FE_AD4020
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_abstract.vhd" in Library work.
+Entity <spi_abstract> compiled.
+Entity <spi_abstract> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd" in Library work.
+Architecture behavioral of Entity spi_commands is up to date.
+Compiling vhdl file "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd" in Library work.
+Entity <fe_ad4020> compiled.
+Entity <fe_ad4020> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <FE_AD4020> in library <work> (architecture <behavioral>) with generics.
+	input_clk_freq = 100000000
+
+Analyzing hierarchy for entity <spi_commands> in library <work> (architecture <behavioral>) with generics.
+	address_used_g = '1'
+	address_width_bits_g = 6
+	command_used_g = '1'
+	command_width_bits_g = 2
+	cpol_cpha = "00"
+	data_width_bits_g = 8
+	output_bits_g = 16
+
+Analyzing hierarchy for entity <spi_abstract> in library <work> (architecture <behavioral>) with generics.
+	cpol_cpha = "00"
+	data_width = 16
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <FE_AD4020> in library <work> (Architecture <behavioral>).
+	input_clk_freq = 100000000
+WARNING:Xst:753 - "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd" line 114: Unconnected output port 'master_slave_data_ack_out' of component 'spi_commands'.
+WARNING:Xst:753 - "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd" line 114: Unconnected output port 'command_done' of component 'spi_commands'.
+WARNING:Xst:753 - "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd" line 114: Unconnected output port 'slave_master_data_out' of component 'spi_commands'.
+WARNING:Xst:753 - "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd" line 114: Unconnected output port 'slave_master_data_ack_out' of component 'spi_commands'.
+WARNING:Xst:753 - "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd" line 114: Unconnected output port 'cs_n' of component 'spi_commands'.
+INFO:Xst:2679 - Register <AD4020_spi_command> in unit <FE_AD4020> has a constant value of 00 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <AD4020_spi_register_address> in unit <FE_AD4020> has a constant value of 010100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <AD4020_spi_write_data> in unit <FE_AD4020> has a constant value of 00000010 during circuit operation. The register is replaced by logic.
+Entity <FE_AD4020> analyzed. Unit <FE_AD4020> generated.
+
+Analyzing generic Entity <spi_commands> in library <work> (Architecture <behavioral>).
+	address_used_g = '1'
+	address_width_bits_g = 6
+	command_used_g = '1'
+	command_width_bits_g = 2
+	cpol_cpha = "00"
+	data_width_bits_g = 8
+	output_bits_g = 16
+WARNING:Xst:1610 - "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd" line 191: Width mismatch. <mosi_data_spi> has a width of 16 bits but assigned expression is 8-bit wide.
+WARNING:Xst:1610 - "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd" line 194: Width mismatch. <mosi_data_spi> has a width of 16 bits but assigned expression is 14-bit wide.
+WARNING:Xst:1610 - "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd" line 200: Width mismatch. <mosi_data_spi> has a width of 16 bits but assigned expression is 10-bit wide.
+INFO:Xst:2679 - Register <master_slave_data_ack_out> in unit <spi_commands> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <spi_commands> analyzed. Unit <spi_commands> generated.
+
+Analyzing generic Entity <spi_abstract> in library <work> (Architecture <behavioral>).
+	cpol_cpha = "00"
+	data_width = 16
+WARNING:Xst:819 - "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_abstract.vhd" line 200: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clk>
+Entity <spi_abstract> analyzed. Unit <spi_abstract> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <spi_abstract>.
+    Related source file is "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_abstract.vhd".
+    Found finite state machine <FSM_0> for signal <cur_spi_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk_off                   (rising_edge)        |
+    | Reset              | rst_n                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | spi_wait                                       |
+    | Power Up State     | spi_wait                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <miso_data_valid_o>.
+    Found 16-bit register for signal <miso_data_o>.
+    Found 1-bit register for signal <mosi_data_ack_o>.
+    Found 16-bit register for signal <bits_sent>.
+    Found 16-bit adder for signal <bits_sent$addsub0000> created at line 91.
+    Found 1-bit register for signal <data_read>.
+    Found 1-bit register for signal <data_read_follower>.
+    Found 1-bit register for signal <mosi_data_valid_i_follower>.
+    Found 1-bit xor2 for signal <mosi_data_valid_i_follower$xor0000> created at line 204.
+    Found 1-bit register for signal <new_data>.
+    Found 1-bit xor2 for signal <new_data$xor0000> created at line 209.
+    Found 16-bit register for signal <read_shift>.
+    Found 1-bit register for signal <reload>.
+    Found 1-bit register for signal <sclk_counter>.
+    Found 1-bit register for signal <sclk_cpol_cpha_ip>.
+    Found 1-bit register for signal <sclk_cpol_cpha_oop>.
+    Found 16-bit register for signal <send_shift>.
+    Found 16-bit register for signal <send_shift_next>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  90 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <spi_abstract> synthesized.
+
+
+Synthesizing Unit <spi_commands>.
+    Related source file is "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/spi_commands.vhd".
+WARNING:Xst:653 - Signal <data_select> is used but never assigned. This sourceless signal will be automatically connected to value 11.
+    Found finite state machine <FSM_1> for signal <cur_spi_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst_n                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | spi_state_wait                                 |
+    | Power Up State     | spi_state_wait                                 |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <data_select>.
+    Found 1-bit register for signal <slave_master_data_ack_out>.
+    Found 6-bit register for signal <address_signal>.
+    Found 2-bit register for signal <command_signal>.
+    Found 1-bit register for signal <cs_n_signal_follower>.
+    Found 1-bit xor2 for signal <cs_n_signal_follower$xor0000> created at line 210.
+    Found 8-bit register for signal <data_signal>.
+    Found 8-bit up counter for signal <miso_byte_ack_count>.
+    Found 1-bit register for signal <mosi_data_ack_spi_follower>.
+    Found 16-bit register for signal <mosi_data_spi>.
+    Found 1-bit register for signal <mosi_data_valid_spi>.
+    Found 1-bit xor2 for signal <mosi_data_valid_spi$xor0000> created at line 186.
+    Found 1-bit register for signal <slave_master_data_ack_out_en>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  37 D-type flip-flop(s).
+Unit <spi_commands> synthesized.
+
+
+Synthesizing Unit <FE_AD4020>.
+    Related source file is "C:/Users/meysam/Desktop/Project/6-final/Final_Project_401611292/AD4020.vhd".
+WARNING:Xst:647 - Input <sys_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <data_ready> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <AD4020_spi_sclk_delayed> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <AD4020_data_r> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Register <sclk_en<0>> equivalent to <mosi_ctrl<0>> has been removed
+INFO:Xst:1799 - State spi_data_load is never reached in FSM <state>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 11                                             |
+    | Clock              | spi_clk                   (rising_edge)        |
+    | Reset              | sys_reset_n               (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init_adc                                       |
+    | Power Up State     | init_adc                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <AD4020_conv>.
+    Found 20-bit register for signal <AD4020_data>.
+    Found 1-bit register for signal <AD4020_spi_write_data_rdy>.
+    Found 1-bit register for signal <AD4020_valid>.
+    Found 32-bit register for signal <bits_left>.
+    Found 32-bit subtractor for signal <bits_left$addsub0000> created at line 248.
+    Found 31-bit register for signal <counter>.
+    Found 31-bit adder for signal <counter$share0000> created at line 273.
+    Found 1-bit register for signal <gpio_init_complete<0>>.
+    Found 1-bit register for signal <init_done>.
+    Found 1-bit register for signal <mosi_ctrl<0>>.
+    Found 1-bit register for signal <one_cycle_delay<0>>.
+    Found 1-bit register for signal <read_complete<0>>.
+    Found 32-bit comparator greater for signal <read_complete_0$cmp_gt0000> created at line 246.
+    Found 1-bit register for signal <read_mosi>.
+    Found 1-bit register for signal <SDI_is_low<0>>.
+    Found 1-bit register for signal <spi_clk_en<0>>.
+    Found 1-bit register for signal <tquiet1_delay_complete<0>>.
+    Found 1-bit register for signal <tquiet2_delay_complete<0>>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  96 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <FE_AD4020> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 1
+ 31-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 58
+ 1-bit register                                        : 47
+ 16-bit register                                       : 6
+ 2-bit register                                        : 1
+ 31-bit register                                       : 1
+ 32-bit register                                       : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:7]> with one-hot encoding.
+----------------------------------
+ State                | Encoding
+----------------------------------
+ init_adc             | 0000001
+ spi_init_load        | 0000010
+ spi_data_load        | unreached
+ spi_read_data_busy   | 0100000
+ spi_read_data_start  | 0000100
+ spi_write_init_busy  | 0010000
+ spi_write_init_start | 0001000
+ spi_read_data_finish | 1000000
+----------------------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <spi_AD4020/cur_spi_state/FSM> on signal <cur_spi_state[1:4]> with one-hot encoding.
+-------------------------------------------
+ State                         | Encoding
+-------------------------------------------
+ spi_state_wait                | 0001
+ spi_state_payload             | 0010
+ spi_state_command_done        | 0100
+ spi_state_command_done_signal | 1000
+-------------------------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <spi_AD4020/spi_slave/cur_spi_state/FSM> on signal <cur_spi_state[1:3]> with gray encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ spi_wait      | 000
+ spi_cs        | 001
+ spi_shift     | 011
+ spi_csn_delay | 010
+ spi_csn       | 110
+---------------------------
+INFO:Xst:2261 - The FF/Latch <address_signal_2> in Unit <spi_AD4020> is equivalent to the following 2 FFs/Latches, which will be removed : <address_signal_4> <data_signal_1> 
+INFO:Xst:2261 - The FF/Latch <address_signal_0> in Unit <spi_AD4020> is equivalent to the following 12 FFs/Latches, which will be removed : <address_signal_1> <address_signal_3> <address_signal_5> <command_signal_0> <command_signal_1> <data_signal_0> <data_signal_2> <data_signal_3> <data_signal_4> <data_signal_5> <data_signal_6> <data_signal_7> 
+INFO:Xst:2261 - The FF/Latch <mosi_data_spi_0> in Unit <spi_AD4020> is equivalent to the following 12 FFs/Latches, which will be removed : <mosi_data_spi_2> <mosi_data_spi_3> <mosi_data_spi_4> <mosi_data_spi_5> <mosi_data_spi_6> <mosi_data_spi_7> <mosi_data_spi_8> <mosi_data_spi_9> <mosi_data_spi_11> <mosi_data_spi_13> <mosi_data_spi_14> <mosi_data_spi_15> 
+INFO:Xst:2261 - The FF/Latch <mosi_data_spi_1> in Unit <spi_AD4020> is equivalent to the following 2 FFs/Latches, which will be removed : <mosi_data_spi_10> <mosi_data_spi_12> 
+WARNING:Xst:1426 - The value init of the FF/Latch mosi_ctrl_0 hinder the constant cleaning in the block FE_AD4020.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_0> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_2> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_3> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_4> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_5> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_6> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_7> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_8> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_9> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_11> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_13> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_14> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_next_15> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <send_shift_0> (without init value) has a constant value of 0 in block <spi_slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <address_signal_0> (without init value) has a constant value of 0 in block <spi_AD4020>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mosi_data_spi_0> (without init value) has a constant value of 0 in block <spi_AD4020>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <address_signal<5:5>> (without init value) have a constant value of 0 in block <spi_commands>.
+WARNING:Xst:2404 -  FFs/Latches <command_signal<1:0>> (without init value) have a constant value of 0 in block <spi_commands>.
+WARNING:Xst:2404 -  FFs/Latches <data_signal<7:2>> (without init value) have a constant value of 0 in block <spi_commands>.
+WARNING:Xst:2404 -  FFs/Latches <mosi_data_spi<15:13>> (without init value) have a constant value of 0 in block <spi_commands>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 1
+ 31-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 210
+ Flip-Flops                                            : 210
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <address_signal_0> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <address_signal_1> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <address_signal_3> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_signal_0> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mosi_data_spi_2> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mosi_data_spi_3> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mosi_data_spi_4> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mosi_data_spi_5> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mosi_data_spi_6> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mosi_data_spi_7> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mosi_data_spi_0> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mosi_data_spi_8> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mosi_data_spi_9> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mosi_data_spi_11> (without init value) has a constant value of 0 in block <spi_commands>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch mosi_ctrl_0 hinder the constant cleaning in the block FE_AD4020.
+   You should achieve better results by setting this init to 0.
+INFO:Xst:2261 - The FF/Latch <address_signal_2> in Unit <spi_commands> is equivalent to the following 2 FFs/Latches, which will be removed : <address_signal_4> <data_signal_1> 
+INFO:Xst:2261 - The FF/Latch <mosi_data_spi_1> in Unit <spi_commands> is equivalent to the following 2 FFs/Latches, which will be removed : <mosi_data_spi_10> <mosi_data_spi_12> 
+INFO:Xst:2261 - The FF/Latch <send_shift_next_0> in Unit <spi_abstract> is equivalent to the following 12 FFs/Latches, which will be removed : <send_shift_next_2> <send_shift_next_3> <send_shift_next_4> <send_shift_next_5> <send_shift_next_6> <send_shift_next_7> <send_shift_next_8> <send_shift_next_9> <send_shift_next_11> <send_shift_next_13> <send_shift_next_14> <send_shift_next_15> 
+INFO:Xst:2261 - The FF/Latch <send_shift_next_1> in Unit <spi_abstract> is equivalent to the following 2 FFs/Latches, which will be removed : <send_shift_next_10> <send_shift_next_12> 
+WARNING:Xst:1710 - FF/Latch <send_shift_0> (without init value) has a constant value of 0 in block <spi_abstract>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <send_shift_next_0> (without init value) has a constant value of 0 in block <spi_abstract>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <FE_AD4020> ...
+
+Optimizing unit <spi_abstract> ...
+
+Optimizing unit <spi_commands> ...
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_0> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_1> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_2> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_3> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_4> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_5> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_6> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_7> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_8> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_9> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_10> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_11> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_12> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_13> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_14> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/read_shift_15> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_valid_o> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_0> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_1> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_2> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_3> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_4> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_5> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_6> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_7> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_8> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_9> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_10> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_11> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_12> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_13> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_14> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/spi_slave/miso_data_o_15> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/miso_byte_ack_count_7> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/miso_byte_ack_count_6> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/miso_byte_ack_count_5> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/miso_byte_ack_count_4> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/miso_byte_ack_count_3> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/miso_byte_ack_count_2> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/miso_byte_ack_count_1> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/miso_byte_ack_count_0> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/slave_master_data_ack_out> of sequential type is unconnected in block <FE_AD4020>.
+WARNING:Xst:2677 - Node <spi_AD4020/slave_master_data_ack_out_en> of sequential type is unconnected in block <FE_AD4020>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FE_AD4020, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 155
+ Flip-Flops                                            : 155
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : FE_AD4020.ngr
+Top Level Output File Name         : FE_AD4020
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 476
+#      GND                         : 1
+#      INV                         : 37
+#      LUT1                        : 46
+#      LUT2                        : 24
+#      LUT2_D                      : 1
+#      LUT3                        : 25
+#      LUT3_D                      : 2
+#      LUT4                        : 152
+#      LUT4_D                      : 4
+#      LUT4_L                      : 1
+#      MUXCY                       : 97
+#      MUXF5                       : 6
+#      VCC                         : 1
+#      XORCY                       : 79
+# FlipFlops/Latches                : 155
+#      FD                          : 37
+#      FD_1                        : 31
+#      FDC                         : 16
+#      FDCE                        : 38
+#      FDE                         : 2
+#      FDE_1                       : 21
+#      FDP                         : 2
+#      FDPE                        : 2
+#      FDR                         : 1
+#      FDS                         : 1
+#      FDS_1                       : 2
+#      FDSE                        : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 27
+#      IBUF                        : 3
+#      OBUF                        : 24
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                      164  out of   3584     4%  
+ Number of Slice Flip Flops:            155  out of   7168     2%  
+ Number of 4 input LUTs:                292  out of   7168     4%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  27  out of    141    19%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+spi_clk                            | IBUF+BUFG              | 119   |
+spi_AD4020/spi_slave/sclk_counter1 | BUFG                   | 36    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------------------------+------------------------+-------+
+Control Signal                                                            | Buffer(FF name)        | Load  |
+--------------------------------------------------------------------------+------------------------+-------+
+spi_AD4020/cur_spi_state_FSM_Acst_FSM_inv(state_FSM_Acst_FSM_inv1_INV_0:O)| NONE(init_done)        | 58    |
+--------------------------------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.920ns (Maximum Frequency: 83.889MHz)
+   Minimum input arrival time before clock: 4.881ns
+   Maximum output required time after clock: 8.298ns
+   Maximum combinational path delay: 8.138ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'spi_clk'
+  Clock period: 11.920ns (frequency: 83.889MHz)
+  Total number of paths / destination ports: 7348 / 130
+-------------------------------------------------------------------------
+Delay:               5.960ns (Levels of Logic = 3)
+  Source:            state_FSM_FFd2 (FF)
+  Destination:       AD4020_data_3 (FF)
+  Source Clock:      spi_clk rising
+  Destination Clock: spi_clk falling
+
+  Data Path: state_FSM_FFd2 to AD4020_data_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.626   0.987  state_FSM_FFd2 (state_FSM_FFd2)
+     LUT4_D:I3->O          3   0.479   0.830  AD4020_data_0_not0001141 (N3)
+     LUT3_D:I2->O          6   0.479   0.876  AD4020_data_11_not000111 (N8)
+     LUT4:I3->O            1   0.479   0.681  AD4020_data_7_not00011 (AD4020_data_7_not0001)
+     FDE_1:CE                  0.524          AD4020_data_7
+    ----------------------------------------
+    Total                      5.960ns (2.587ns logic, 3.373ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'spi_AD4020/spi_slave/sclk_counter1'
+  Clock period: 6.730ns (frequency: 148.596MHz)
+  Total number of paths / destination ports: 565 / 67
+-------------------------------------------------------------------------
+Delay:               6.730ns (Levels of Logic = 4)
+  Source:            spi_AD4020/spi_slave/bits_sent_3 (FF)
+  Destination:       spi_AD4020/spi_slave/data_read (FF)
+  Source Clock:      spi_AD4020/spi_slave/sclk_counter1 rising
+  Destination Clock: spi_AD4020/spi_slave/sclk_counter1 rising
+
+  Data Path: spi_AD4020/spi_slave/bits_sent_3 to spi_AD4020/spi_slave/data_read
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   1.040  spi_AD4020/spi_slave/bits_sent_3 (spi_AD4020/spi_slave/bits_sent_3)
+     LUT4:I0->O            1   0.479   0.976  spi_AD4020/spi_slave/cur_spi_state_cmp_eq000017 (spi_AD4020/spi_slave/cur_spi_state_cmp_eq000017)
+     LUT4:I0->O           19   0.479   1.256  spi_AD4020/spi_slave/cur_spi_state_cmp_eq0000165 (spi_AD4020/spi_slave/N2)
+     LUT4:I3->O            1   0.479   0.740  spi_AD4020/spi_slave/data_read_mux0000_SW0 (N40)
+     LUT4:I2->O            1   0.479   0.000  spi_AD4020/spi_slave/data_read_mux0000 (spi_AD4020/spi_slave/data_read_mux0000)
+     FDC:D                     0.176          spi_AD4020/spi_slave/data_read
+    ----------------------------------------
+    Total                      6.730ns (2.718ns logic, 4.012ns route)
+                                       (40.4% logic, 59.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'spi_clk'
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Offset:              4.881ns (Levels of Logic = 3)
+  Source:            sys_reset_n (PAD)
+  Destination:       spi_AD4020/cs_n_signal_follower (FF)
+  Destination Clock: spi_clk rising
+
+  Data Path: sys_reset_n to spi_AD4020/cs_n_signal_follower
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.715   0.929  sys_reset_n_IBUF (sys_reset_n_IBUF)
+     LUT4:I3->O            4   0.479   1.074  spi_AD4020/spi_slave/cs_n_signal1 (spi_AD4020/cs_n_signal)
+     LUT3:I0->O            1   0.479   0.681  spi_AD4020/cs_n_signal_follower_not00011 (spi_AD4020/cs_n_signal_follower_not0001)
+     FDPE:CE                   0.524          spi_AD4020/cs_n_signal_follower
+    ----------------------------------------
+    Total                      4.881ns (2.197ns logic, 2.684ns route)
+                                       (45.0% logic, 55.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'spi_AD4020/spi_slave/sclk_counter1'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              3.929ns (Levels of Logic = 2)
+  Source:            sys_reset_n (PAD)
+  Destination:       spi_AD4020/spi_slave/send_shift_1 (FF)
+  Destination Clock: spi_AD4020/spi_slave/sclk_counter1 rising
+
+  Data Path: sys_reset_n to spi_AD4020/spi_slave/send_shift_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.715   1.201  sys_reset_n_IBUF (sys_reset_n_IBUF)
+     LUT4:I0->O           15   0.479   1.010  spi_AD4020/spi_slave/send_shift_not00011 (spi_AD4020/spi_slave/send_shift_not0001)
+     FDCE:CE                   0.524          spi_AD4020/spi_slave/send_shift_1
+    ----------------------------------------
+    Total                      3.929ns (1.718ns logic, 2.211ns route)
+                                       (43.7% logic, 56.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'spi_clk'
+  Total number of paths / destination ports: 27 / 24
+-------------------------------------------------------------------------
+Offset:              7.950ns (Levels of Logic = 3)
+  Source:            spi_clk_en_0 (FF)
+  Destination:       AD4020_SCLK_out (PAD)
+  Source Clock:      spi_clk rising
+
+  Data Path: spi_clk_en_0 to AD4020_SCLK_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.626   0.941  spi_clk_en_0 (spi_clk_en_0)
+     LUT2:I1->O            1   0.479   0.000  AD4020_SCLK_out2 (AD4020_SCLK_out2)
+     MUXF5:I0->O           1   0.314   0.681  AD4020_SCLK_out_f5 (AD4020_SCLK_out_OBUF)
+     OBUF:I->O                 4.909          AD4020_SCLK_out_OBUF (AD4020_SCLK_out)
+    ----------------------------------------
+    Total                      7.950ns (6.328ns logic, 1.622ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'spi_AD4020/spi_slave/sclk_counter1'
+  Total number of paths / destination ports: 5 / 2
+-------------------------------------------------------------------------
+Offset:              8.298ns (Levels of Logic = 3)
+  Source:            spi_AD4020/spi_slave/cur_spi_state_FSM_FFd2 (FF)
+  Destination:       AD4020_MOSI_out (PAD)
+  Source Clock:      spi_AD4020/spi_slave/sclk_counter1 rising
+
+  Data Path: spi_AD4020/spi_slave/cur_spi_state_FSM_FFd2 to AD4020_MOSI_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.626   1.289  spi_AD4020/spi_slave/cur_spi_state_FSM_FFd2 (spi_AD4020/spi_slave/cur_spi_state_FSM_FFd2)
+     LUT4:I0->O            1   0.479   0.000  AD4020_MOSI_out1 (AD4020_MOSI_out1)
+     MUXF5:I1->O           1   0.314   0.681  AD4020_MOSI_out_f5 (AD4020_MOSI_out_OBUF)
+     OBUF:I->O                 4.909          AD4020_MOSI_out_OBUF (AD4020_MOSI_out)
+    ----------------------------------------
+    Total                      8.298ns (6.328ns logic, 1.970ns route)
+                                       (76.3% logic, 23.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               8.138ns (Levels of Logic = 4)
+  Source:            spi_clk (PAD)
+  Destination:       AD4020_SCLK_out (PAD)
+
+  Data Path: spi_clk to AD4020_SCLK_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.715   1.040  spi_clk_IBUF (spi_clk_IBUF1)
+     LUT2:I0->O            1   0.479   0.000  AD4020_SCLK_out2 (AD4020_SCLK_out2)
+     MUXF5:I0->O           1   0.314   0.681  AD4020_SCLK_out_f5 (AD4020_SCLK_out_OBUF)
+     OBUF:I->O                 4.909          AD4020_SCLK_out_OBUF (AD4020_SCLK_out)
+    ----------------------------------------
+    Total                      8.138ns (6.417ns logic, 1.721ns route)
+                                       (78.8% logic, 21.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 20.28 secs
+ 
+--> 
+
+Total memory usage is 269824 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   95 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+
